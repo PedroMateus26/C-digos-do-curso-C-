@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TesteGit
+namespace Exercicio_conversor_de_moeda
 {
     class Program
     {
