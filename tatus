@@ -1,0 +1,41 @@
+[33mcommit 6f18dcf9aa92e28ed7552bf4f7d8e721e0593736[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Pedro Mateus <pedromateusneto@gmail.com>
+Date:   Mon Apr 8 19:34:08 2019 -0300
+
+    Curso C# mais exercício
+
+[33mcommit 126093d8b31b081ee54eb0eb3bb33e9ed281e69d[m
+Author: Pedro Mateus <pedromateusneto@gmail.com>
+Date:   Tue Apr 2 21:03:53 2019 -0300
+
+    Todos os códigos do curso de C# do professor Nélio Alves
+
+[33mcommit 3ebed2ab634d00cf5d8a7ee233d48bfedb52e04e[m
+Author: Pedro Mateus <pedromateusneto@gmail.com>
+Date:   Tue Apr 2 18:30:07 2019 -0300
+
+    Boa noite
+
+[33mcommit 267196959a0b7d0d1639a125422c3ad274596ce3[m
+Author: Pedro Mateus <pedromateusneto@gmail.com>
+Date:   Tue Apr 2 18:02:38 2019 -0300
+
+    Mais um bom dia
+
+[33mcommit e7412178affc4e96673d71eb255b480e37a722c8[m
+Author: Pedro Mateus <pedromateusneto@gmail.com>
+Date:   Tue Apr 2 18:00:10 2019 -0300
+
+    coloquei uma linha
+
+[33mcommit 92dc32aa3755ece90d3fc2cea03369d796eab59f[m
+Author: Pedro Mateus <pedromateusneto@gmail.com>
+Date:   Tue Apr 2 17:46:50 2019 -0300
+
+    Adicionar arquivos de projeto.
+
+[33mcommit abba41c13d4170f8299a2be4c5fd1cd3452d9d9d[m
+Author: Pedro Mateus <pedromateusneto@gmail.com>
+Date:   Tue Apr 2 17:46:41 2019 -0300
+
+    Adicionar .gitignore e .gitattributes.
