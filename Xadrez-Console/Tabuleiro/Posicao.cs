@@ -1,4 +1,4 @@
-﻿
+﻿using Xadrez;
 namespace tabuleiro
 {
     class Posicao
