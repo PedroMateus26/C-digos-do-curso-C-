@@ -27,7 +27,7 @@ namespace Xadrez
             p.incrementarQteMovimentos();
             Peca pecacapturada = tab.retirarPeca(destino);
             tab.colocarPeca(p,destino);
-            colocarPecas();
+            //colocarPecas();
         }
         
         private void colocarPecas()
