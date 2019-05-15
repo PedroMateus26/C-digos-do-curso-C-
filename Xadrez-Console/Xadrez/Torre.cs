@@ -40,7 +40,7 @@ namespace Xadrez
             pos.definirValores(Posicao.Linha , Posicao.Coluna+1);
             while (Tab.posicaoValida(pos) && podeMover(pos))
             {
-                mat[Posicao.Linha, Posicao.Coluna] = true;
+                mat[pos.Linha, pos.Coluna] = true;
                 if (Tab.peca(pos) != null && Tab.peca(pos).Cor != this.Cor) break;
                 pos.Coluna = pos.Coluna + 1;
             }

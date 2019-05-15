@@ -15,6 +15,7 @@ namespace Xadrez_Console
             Console.WriteLine();
             Console.WriteLine("Turno " + partida.turno);
             Console.WriteLine("Aguardando jogada das peças " + partida.jogadorAtual);
+            if (partida.xeque) Console.WriteLine("XEQUE!");
         }
 
         public static void imprimirPecasCapturadas(PartidadeXadrez partida)
@@ -66,6 +67,7 @@ namespace Xadrez_Console
                     if (posicoesPossiveis[i, j]) Console.BackgroundColor = fundoAlterado;
                     else Console.BackgroundColor = fundoOriginal;
                     imprimirPeca(tab.peca(i, j));
+                    Console.BackgroundColor = fundoOriginal;
 
                 }
                 Console.WriteLine();
