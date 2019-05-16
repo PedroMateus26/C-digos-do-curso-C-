@@ -11,11 +11,8 @@ namespace Xadrez_Console
         {
             try
             {
-                //Tabuleiro tab = new Tabuleiro(8, 8);
-                //tab.colocarPeca(new Torre(tab, Cor.Branca), new Posicao('c', 1));
-                //tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
                 PartidadeXadrez partida = new PartidadeXadrez();
-                Tela.imprimirTabuleiro(partida.tab);
+               
 
                 while (!partida.terminada)
                 {
@@ -45,7 +42,8 @@ namespace Xadrez_Console
                         Console.ReadLine();
                     }
                 }
-
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
             catch (TabuleiroException e)
             {
