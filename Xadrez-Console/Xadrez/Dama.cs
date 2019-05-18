@@ -68,7 +68,7 @@ namespace Xadrez
             {
                 mat[pos.Linha, pos.Coluna] = true;
                 if (Tab.peca(pos) != null && Tab.peca(pos).Cor != this.Cor) break;
-                pos.definirValores(Posicao.Linha - 1, Posicao.Coluna + 1);
+                pos.definirValores(pos.Linha - 1, pos.Coluna + 1);
             }
 
             //SE
@@ -77,7 +77,7 @@ namespace Xadrez
             {
                 mat[pos.Linha, pos.Coluna] = true;
                 if (Tab.peca(pos) != null && Tab.peca(pos).Cor != this.Cor) break;
-                pos.definirValores(Posicao.Linha + 1, Posicao.Coluna + 1);
+                pos.definirValores(pos.Linha + 1, pos.Coluna + 1);
             }
 
             //NO
@@ -86,7 +86,7 @@ namespace Xadrez
             {
                 mat[pos.Linha, pos.Coluna] = true;
                 if (Tab.peca(pos) != null && Tab.peca(pos).Cor != this.Cor) break;
-                pos.definirValores(Posicao.Linha - 1, Posicao.Coluna - 1);
+                pos.definirValores(pos.Linha - 1, pos.Coluna - 1);
             }
 
             //SO
@@ -95,7 +95,7 @@ namespace Xadrez
             {
                 mat[pos.Linha, pos.Coluna] = true;
                 if (Tab.peca(pos) != null && Tab.peca(pos).Cor != this.Cor) break;
-                pos.definirValores(Posicao.Linha + 1, Posicao.Coluna - 1);
+                pos.definirValores(pos.Linha + 1, pos.Coluna - 1);
             }
 
             return mat;
