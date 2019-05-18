@@ -135,6 +135,48 @@ namespace Xadrez
                 desfazMovimento(origem, destino, pecaCapturada);
                 throw new TabuleiroException("Você não se pode colocar me xeque!");
             }
+
+            //Jogada especial Promoção
+            Peca p = tab.peca(destino);
+            if(p is Peao)
+            {
+                if ((p.Cor == Cor.Branca && destino.Linha == 0) || ((p.Cor == Cor.Preta && destino.Linha == 7)))
+                {
+                    p = tab.retirarPeca(destino);
+                    pecas.Remove(p);
+                    
+                    Console.Write("Entre com o valor  para o tipo de peça desejado: 1-cavalo, 2,bispo , 3-torre e 4-dama: ");
+                    int n = int.Parse(Console.ReadLine());
+                    switch (n)
+                    {
+                        case 1:
+                            Peca Cavalo = new Cavalo(tab, p.Cor);
+                            tab.colocarPeca(Cavalo, destino);
+                            pecas.Add(Cavalo);
+                            break;
+                        case 2:
+                            Peca Bispo = new Bispo(tab, p.Cor);
+                            tab.colocarPeca(Bispo, destino);
+                            pecas.Add(Bispo);
+                            break;
+                        case 3:
+                            Peca Torre = new Torre(tab, p.Cor);
+                            tab.colocarPeca(Torre, destino);
+                            pecas.Add(Torre);
+                            break;
+                        case 4:
+                            Peca Dama = new Dama(tab, p.Cor);
+                            tab.colocarPeca(Dama, destino);
+                            pecas.Add(Dama);
+                            break;
+                    }
+                    
+                }
+                
+
+                
+            }
+
             if (estaEmXeque(corAdversaria(jogadorAtual))) xeque = true;
             else xeque = false;
 
@@ -148,7 +190,7 @@ namespace Xadrez
                 mudaJogador();
             }
 
-            Peca p = tab.peca(destino);
+            
             //Jogada especial enpassant
             if (p is Peao && (destino.Linha == origem.Linha - 2 || destino.Linha == origem.Linha + 2))
             {
